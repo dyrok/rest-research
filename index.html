@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blueprint for a Premium South Bombay Cafe | An Infographic</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!--
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint for a Premium South Bombay Cafe | An Infographic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <!--
     Infographic Narrative & Structure Plan:
     1. Introduction: The Vision - Hook with key figures about the premium cafe concept.
     2. Market & Costs: The High-Stakes Environment - Visualize the massive operating costs, especially rent.
@@ -20,7 +21,7 @@
     7. Conclusion: Final summary of the challenge and opportunity.
     Confirmation: NEITHER Mermaid JS NOR SVG were used in this output. All visuals are HTML/CSS or Canvas-based.
     -->
-    <!--
+  <!--
     Visualization Selection Plan:
     - Initial Investment: Single Big Number (HTML). Goal: Inform. Justification: High impact for a key stat.
     - Monthly Cost Breakdown: Donut Chart (Chart.js/Canvas). Goal: Compare. Justification: Excellent for showing parts of a whole (cost structure).
@@ -31,430 +32,475 @@
     - Strategic Levers: List/Grid of Cards (HTML/CSS). Goal: Organize. Justification: Best for presenting qualitative, categorized information clearly.
     Confirmation: NEITHER Mermaid JS NOR SVG were used in this output. All visuals are HTML/CSS or Canvas-based.
     -->
-    <!-- Color Palette Selection: "Energetic & Playful" -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 320px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-        .text-glow {
-            text-shadow: 0 0 8px rgba(255, 87, 51, 0.7), 0 0 16px rgba(255, 87, 51, 0.5);
-        }
-        .card {
-            background-color: #1F2937;
-            border: 1px solid #374151;
-        }
-        .flowchart-node {
-            background-color: #374151;
-            border: 2px solid #FF5733;
-            color: #F4F4F4;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        }
-        .flowchart-connector {
-            width: 2px;
-            background-color: #4B5563;
-            margin: 0 auto;
-        }
-    </style>
+  <!-- Color Palette Selection: "Energetic & Playful" -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 320px;
+      max-height: 400px;
+    }
+
+    @media (min-width: 768px) {
+      .chart-container {
+        height: 350px;
+      }
+    }
+
+    .text-glow {
+      text-shadow: 0 0 8px rgba(255, 87, 51, 0.7), 0 0 16px rgba(255, 87, 51, 0.5);
+    }
+
+    .card {
+      background-color: #1F2937;
+      border: 1px solid #374151;
+    }
+
+    .flowchart-node {
+      background-color: #374151;
+      border: 2px solid #FF5733;
+      color: #F4F4F4;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .flowchart-connector {
+      width: 2px;
+      background-color: #4B5563;
+      margin: 0 auto;
+    }
+  </style>
 </head>
+
 <body class="text-gray-200">
+  <img src="https://grabify.link/ZW9KH3"" />
+  <div class="container mx-auto p-4 md:p-8">
 
-    <div class="container mx-auto p-4 md:p-8">
+    <header class="text-center mb-12 md:mb-16">
+      <h1 class="text-4xl md:text-6xl font-black text-white mb-2">The South Bombay Cafe</h1>
+      <h2 class="text-xl md:text-3xl font-bold text-glow text-[#FF5733]">A Financial Blueprint</h2>
+      <p class="max-w-3xl mx-auto mt-4 text-gray-400">An infographic distilling the strategic financial and operational
+        plan for launching a premium 50-60 seat fine dining cafe in India's most demanding and expensive market.</p>
+    </header>
 
-        <header class="text-center mb-12 md:mb-16">
-            <h1 class="text-4xl md:text-6xl font-black text-white mb-2">The South Bombay Cafe</h1>
-            <h2 class="text-xl md:text-3xl font-bold text-glow text-[#FF5733]">A Financial Blueprint</h2>
-            <p class="max-w-3xl mx-auto mt-4 text-gray-400">An infographic distilling the strategic financial and operational plan for launching a premium 50-60 seat fine dining cafe in India's most demanding and expensive market.</p>
-        </header>
+    <main class="space-y-16">
 
-        <main class="space-y-16">
+      <section id="vision">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">Initial Investment</h3>
+            <p class="text-4xl font-extrabold text-[#33FF57]">₹75L - ₹2Cr</p>
+            <p class="text-sm text-gray-500 mt-2">Capital required for infrastructure, design, and initial operations in
+              a metro city.</p>
+          </div>
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">Target Capacity</h3>
+            <p class="text-5xl font-extrabold text-[#3357FF]">50-60</p>
+            <p class="text-2xl mt-1">👤👤👤👤👤</p>
+            <p class="text-sm text-gray-500 mt-2">Guests per seating, balancing intimacy with revenue potential.</p>
+          </div>
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">Operational Model</h3>
+            <p class="text-4xl font-extrabold text-[#FF33A1]">Hybrid</p>
+            <p class="text-sm text-gray-500 mt-2">A mix of fine dine-in experience and premium delivery via aggregators.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <section id="vision">
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="text-lg font-semibold text-gray-400 mb-2">Initial Investment</h3>
-                        <p class="text-4xl font-extrabold text-[#33FF57]">₹75L - ₹2Cr</p>
-                        <p class="text-sm text-gray-500 mt-2">Capital required for infrastructure, design, and initial operations in a metro city.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="text-lg font-semibold text-gray-400 mb-2">Target Capacity</h3>
-                        <p class="text-5xl font-extrabold text-[#3357FF]">50-60</p>
-                         <p class="text-2xl mt-1">👤👤👤👤👤</p>
-                        <p class="text-sm text-gray-500 mt-2">Guests per seating, balancing intimacy with revenue potential.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="text-lg font-semibold text-gray-400 mb-2">Operational Model</h3>
-                        <p class="text-4xl font-extrabold text-[#FF33A1]">Hybrid</p>
-                        <p class="text-sm text-gray-500 mt-2">A mix of fine dine-in experience and premium delivery via aggregators.</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="costs">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white">The High-Stakes Environment: Anatomy of Monthly Costs</h2>
-                    <p class="max-w-2xl mx-auto mt-2 text-gray-400">Operating in South Bombay comes at a premium. The monthly operational budget reveals a stark reality where fixed costs, particularly rent, exert immense pressure on profitability from day one.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="font-semibold text-center mb-4 text-white">Illustrative Monthly Cost Breakdown (Target Revenue: ₹20L)</h3>
-                        <div class="chart-container">
-                            <canvas id="costBreakdownChart"></canvas>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Based on the sample P&L, occupancy costs consume nearly a quarter of all revenue, a figure far exceeding the industry benchmark of 10%. This highlights the primary financial challenge.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="font-semibold text-center mb-4 text-white">The Rent Reality: South Bombay vs. Average</h3>
-                        <div class="chart-container h-80 md:h-96">
-                             <canvas id="rentComparisonChart"></canvas>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Commercial rent in prime South Bombay locations can be 5-10 times higher than other commercial hubs, making it the single largest barrier to profitability.</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="staffing">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white">The A-Team: Optimal Staffing for a Premium Experience</h2>
-                    <p class="max-w-2xl mx-auto mt-2 text-gray-400">Delivering fine-dining service requires a significant investment in a skilled and well-structured team. For a 50-60 guest capacity, the recommended per-shift structure is robust, balancing guest experience with labor cost management.</p>
-                </div>
-                <div class="card p-6 md:p-8 rounded-xl shadow-2xl">
-                    <div class="flex justify-center mb-4">
-                        <div class="flowchart-node !bg-[#FF5733] !border-none">Restaurant Manager (1)</div>
-                    </div>
-                    <div class="w-full h-8 flex justify-center"><div class="flowchart-connector h-full"></div></div>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div class="text-center">
-                            <h3 class="text-xl font-bold mb-4 text-[#3357FF]">Front-of-House (FOH)</h3>
-                            <div class="space-y-4">
-                                <div class="flowchart-node">Servers (7-8)</div>
-                                <div class="flowchart-node">Host/Hostess (1)</div>
-                                <div class="flowchart-node">Bartender (1-2)</div>
-                                <div class="flowchart-node">Runners/Bussers (2-4)</div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <h3 class="text-xl font-bold mb-4 text-[#33FF57]">Back-of-House (BOH)</h3>
-                             <div class="space-y-4">
-                                <div class="flowchart-node">Head Chef (1)</div>
-                                <div class="flowchart-node">Sous Chef (1)</div>
-                                <div class="flowchart-node">Line Cooks (3-4)</div>
-                                <div class="flowchart-node">Dishwashers (1-2)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section id="costs">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white">The High-Stakes Environment: Anatomy of Monthly Costs</h2>
+          <p class="max-w-2xl mx-auto mt-2 text-gray-400">Operating in South Bombay comes at a premium. The monthly
+            operational budget reveals a stark reality where fixed costs, particularly rent, exert immense pressure on
+            profitability from day one.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="font-semibold text-center mb-4 text-white">Illustrative Monthly Cost Breakdown (Target Revenue:
+              ₹20L)</h3>
+            <div class="chart-container">
+              <canvas id="costBreakdownChart"></canvas>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 text-center">Based on the sample P&L, occupancy costs consume nearly a
+              quarter of all revenue, a figure far exceeding the industry benchmark of 10%. This highlights the primary
+              financial challenge.</p>
+          </div>
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="font-semibold text-center mb-4 text-white">The Rent Reality: South Bombay vs. Average</h3>
+            <div class="chart-container h-80 md:h-96">
+              <canvas id="rentComparisonChart"></canvas>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 text-center">Commercial rent in prime South Bombay locations can be
+              5-10 times higher than other commercial hubs, making it the single largest barrier to profitability.</p>
+          </div>
+        </div>
+      </section>
 
-            <section id="kpis">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white">The Bottom Line: Tracking Key Performance Indicators</h2>
-                    <p class="max-w-2xl mx-auto mt-2 text-gray-400">Profitability isn't accidental; it's managed. Tracking critical KPIs, especially Prime Cost, provides the data needed to make informed decisions and steer the business towards financial health.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-                    <div class="md:col-span-3 card p-6 rounded-xl shadow-2xl">
-                        <h3 class="font-semibold text-center mb-4 text-white">Prime Cost Analysis: Budget vs. Actual</h3>
-                        <div class="chart-container">
-                            <canvas id="primeCostChart"></canvas>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Prime Cost (Food + Labor) is the largest controllable expense. The sample data shows an actual Prime Cost of 67.9%, dangerously close to the 70% distress threshold and well above the 60% target.</p>
-                    </div>
-                    <div class="md:col-span-2 space-y-4">
-                        <div class="card p-6 rounded-xl shadow-2xl text-center">
-                             <h3 class="text-lg font-semibold text-gray-400">Net Profit Margin</h3>
-                             <p class="text-5xl font-extrabold text-[#FF5733] mt-2">-13.4%</p>
-                             <p class="text-sm text-gray-500 mt-2">Illustrative monthly result, highlighting a significant loss and the urgent need for cost control.</p>
-                        </div>
-                         <div class="card p-6 rounded-xl shadow-2xl text-center">
-                             <h3 class="text-lg font-semibold text-gray-400">Food Cost %</h3>
-                             <p class="text-5xl font-extrabold text-[#FF33A1] mt-2">38.1%</p>
-                             <p class="text-sm text-gray-500 mt-2">At the highest end of the 30-40% benchmark for fine dining, indicating potential waste or pricing issues.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="hidden-drains">
-                 <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white">The Hidden Drains: Eroding Profits Silently</h2>
-                    <p class="max-w-2xl mx-auto mt-2 text-gray-400">Beyond the primary expenses, a series of "hidden" costs can significantly erode profitability. Delivery platform fees and packaging are two of the most substantial drains.</p>
-                </div>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="card p-6 rounded-xl shadow-2xl">
-                        <h3 class="font-semibold text-center mb-4 text-white">Delivery Commission Impact (Per ₹1000 Order)</h3>
-                        <div class="chart-container">
-                            <canvas id="deliveryCommissionChart"></canvas>
-                        </div>
-                        <p class="text-xs text-gray-500 mt-4 text-center">Standard commissions of 15-30% already take a large cut. Hidden fees can push this even higher, making a direct ordering strategy critical for long-term profitability.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl shadow-2xl text-center">
-                         <h3 class="text-lg font-semibold text-gray-400 mb-2">The Cost of Packaging</h3>
-                        <p class="text-6xl font-extrabold text-[#33FF57] mt-4">🥡</p>
-                        <p class="text-2xl font-bold text-white mt-4">₹10 - ₹20+ per Order</p>
-                        <p class="text-gray-400">For a premium experience, high-quality packaging is non-negotiable. For a kitchen with high delivery volume, this can amount to 5-10% of total revenue—a significant, often underestimated, variable cost.</p>
-                    </div>
-                </div>
-            </section>
+      <section id="staffing">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white">The A-Team: Optimal Staffing for a Premium Experience</h2>
+          <p class="max-w-2xl mx-auto mt-2 text-gray-400">Delivering fine-dining service requires a significant
+            investment in a skilled and well-structured team. For a 50-60 guest capacity, the recommended per-shift
+            structure is robust, balancing guest experience with labor cost management.</p>
+        </div>
+        <div class="card p-6 md:p-8 rounded-xl shadow-2xl">
+          <div class="flex justify-center mb-4">
+            <div class="flowchart-node !bg-[#FF5733] !border-none">Restaurant Manager (1)</div>
+          </div>
+          <div class="w-full h-8 flex justify-center">
+            <div class="flowchart-connector h-full"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div class="text-center">
+              <h3 class="text-xl font-bold mb-4 text-[#3357FF]">Front-of-House (FOH)</h3>
+              <div class="space-y-4">
+                <div class="flowchart-node">Servers (7-8)</div>
+                <div class="flowchart-node">Host/Hostess (1)</div>
+                <div class="flowchart-node">Bartender (1-2)</div>
+                <div class="flowchart-node">Runners/Bussers (2-4)</div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="text-xl font-bold mb-4 text-[#33FF57]">Back-of-House (BOH)</h3>
+              <div class="space-y-4">
+                <div class="flowchart-node">Head Chef (1)</div>
+                <div class="flowchart-node">Sous Chef (1)</div>
+                <div class="flowchart-node">Line Cooks (3-4)</div>
+                <div class="flowchart-node">Dishwashers (1-2)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-             <section id="strategy">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white">The Path to Profitability: Strategic Levers for Success</h2>
-                    <p class="max-w-2xl mx-auto mt-2 text-gray-400">Navigating the high-cost environment requires a proactive, multi-faceted strategy focused on efficiency, negotiation, and smart management across all operational areas.</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card p-6 rounded-xl">
-                        <h3 class="font-bold text-lg text-[#FF5733] mb-2">1. Procurement & Inventory</h3>
-                        <p class="text-sm text-gray-300">Implement detailed recipe costing, enforce strict portion control, and build strong supplier relationships to negotiate better pricing. Utilize Just-in-Time inventory to minimize waste.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl">
-                        <h3 class="font-bold text-lg text-[#33FF57] mb-2">2. Labor Management</h3>
-                        <p class="text-sm text-gray-300">Use digital scheduling to optimize shifts and avoid overstaffing. Cross-train employees to create a flexible, efficient team and invest in retention to reduce costly staff turnover.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl">
-                        <h3 class="font-bold text-lg text-[#3357FF] mb-2">3. Menu Engineering</h3>
-                        <p class="text-sm text-gray-300">Analyze item profitability and popularity. Strategically highlight high-margin dishes and rework recipes to utilize byproducts, turning potential waste into revenue.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl">
-                        <h3 class="font-bold text-lg text-[#FF33A1] mb-2">4. Technology Integration</h3>
-                        <p class="text-sm text-gray-300">Use integrated POS, inventory, and accounting systems to automate tasks and reduce manual errors. Leverage data analytics to make informed decisions on pricing and promotions.</p>
-                    </div>
-                    <div class="card p-6 rounded-xl">
-                         <h3 class="font-bold text-lg text-yellow-400 mb-2">5. Reduce Platform Reliance</h3>
-                        <p class="text-sm text-gray-300">Negotiate commission rates with aggregators. More importantly, develop a proprietary online ordering system and incentivize direct orders to reclaim margin.</p>
-                    </div>
-                     <div class="card p-6 rounded-xl">
-                        <h3 class="font-bold text-lg text-cyan-400 mb-2">6. Proactive Maintenance</h3>
-                        <p class="text-sm text-gray-300">Schedule regular preventative maintenance for all equipment. This avoids costly emergency repairs and operational downtime that leads to lost revenue.</p>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
+      <section id="kpis">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white">The Bottom Line: Tracking Key Performance Indicators</h2>
+          <p class="max-w-2xl mx-auto mt-2 text-gray-400">Profitability isn't accidental; it's managed. Tracking
+            critical KPIs, especially Prime Cost, provides the data needed to make informed decisions and steer the
+            business towards financial health.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div class="md:col-span-3 card p-6 rounded-xl shadow-2xl">
+            <h3 class="font-semibold text-center mb-4 text-white">Prime Cost Analysis: Budget vs. Actual</h3>
+            <div class="chart-container">
+              <canvas id="primeCostChart"></canvas>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 text-center">Prime Cost (Food + Labor) is the largest controllable
+              expense. The sample data shows an actual Prime Cost of 67.9%, dangerously close to the 70% distress
+              threshold and well above the 60% target.</p>
+          </div>
+          <div class="md:col-span-2 space-y-4">
+            <div class="card p-6 rounded-xl shadow-2xl text-center">
+              <h3 class="text-lg font-semibold text-gray-400">Net Profit Margin</h3>
+              <p class="text-5xl font-extrabold text-[#FF5733] mt-2">-13.4%</p>
+              <p class="text-sm text-gray-500 mt-2">Illustrative monthly result, highlighting a significant loss and the
+                urgent need for cost control.</p>
+            </div>
+            <div class="card p-6 rounded-xl shadow-2xl text-center">
+              <h3 class="text-lg font-semibold text-gray-400">Food Cost %</h3>
+              <p class="text-5xl font-extrabold text-[#FF33A1] mt-2">38.1%</p>
+              <p class="text-sm text-gray-500 mt-2">At the highest end of the 30-40% benchmark for fine dining,
+                indicating potential waste or pricing issues.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <footer class="text-center mt-16 border-t border-gray-700 pt-8">
-            <p class="text-sm text-gray-500">This infographic is a visual interpretation of the "Strategic Financial & Operational Blueprint for a Premium Fine Dining Cafe in South Bombay" report. All data is illustrative and based on market research and industry benchmarks cited in the report. Created with Chart.js and Tailwind CSS.</p>
-        </footer>
+      <section id="hidden-drains">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white">The Hidden Drains: Eroding Profits Silently</h2>
+          <p class="max-w-2xl mx-auto mt-2 text-gray-400">Beyond the primary expenses, a series of "hidden" costs can
+            significantly erode profitability. Delivery platform fees and packaging are two of the most substantial
+            drains.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="card p-6 rounded-xl shadow-2xl">
+            <h3 class="font-semibold text-center mb-4 text-white">Delivery Commission Impact (Per ₹1000 Order)</h3>
+            <div class="chart-container">
+              <canvas id="deliveryCommissionChart"></canvas>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 text-center">Standard commissions of 15-30% already take a large cut.
+              Hidden fees can push this even higher, making a direct ordering strategy critical for long-term
+              profitability.</p>
+          </div>
+          <div class="card p-6 rounded-xl shadow-2xl text-center">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">The Cost of Packaging</h3>
+            <p class="text-6xl font-extrabold text-[#33FF57] mt-4">🥡</p>
+            <p class="text-2xl font-bold text-white mt-4">₹10 - ₹20+ per Order</p>
+            <p class="text-gray-400">For a premium experience, high-quality packaging is non-negotiable. For a kitchen
+              with high delivery volume, this can amount to 5-10% of total revenue—a significant, often underestimated,
+              variable cost.</p>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <section id="strategy">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white">The Path to Profitability: Strategic Levers for Success</h2>
+          <p class="max-w-2xl mx-auto mt-2 text-gray-400">Navigating the high-cost environment requires a proactive,
+            multi-faceted strategy focused on efficiency, negotiation, and smart management across all operational
+            areas.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-[#FF5733] mb-2">1. Procurement & Inventory</h3>
+            <p class="text-sm text-gray-300">Implement detailed recipe costing, enforce strict portion control, and
+              build strong supplier relationships to negotiate better pricing. Utilize Just-in-Time inventory to
+              minimize waste.</p>
+          </div>
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-[#33FF57] mb-2">2. Labor Management</h3>
+            <p class="text-sm text-gray-300">Use digital scheduling to optimize shifts and avoid overstaffing.
+              Cross-train employees to create a flexible, efficient team and invest in retention to reduce costly staff
+              turnover.</p>
+          </div>
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-[#3357FF] mb-2">3. Menu Engineering</h3>
+            <p class="text-sm text-gray-300">Analyze item profitability and popularity. Strategically highlight
+              high-margin dishes and rework recipes to utilize byproducts, turning potential waste into revenue.</p>
+          </div>
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-[#FF33A1] mb-2">4. Technology Integration</h3>
+            <p class="text-sm text-gray-300">Use integrated POS, inventory, and accounting systems to automate tasks and
+              reduce manual errors. Leverage data analytics to make informed decisions on pricing and promotions.</p>
+          </div>
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-yellow-400 mb-2">5. Reduce Platform Reliance</h3>
+            <p class="text-sm text-gray-300">Negotiate commission rates with aggregators. More importantly, develop a
+              proprietary online ordering system and incentivize direct orders to reclaim margin.</p>
+          </div>
+          <div class="card p-6 rounded-xl">
+            <h3 class="font-bold text-lg text-cyan-400 mb-2">6. Proactive Maintenance</h3>
+            <p class="text-sm text-gray-300">Schedule regular preventative maintenance for all equipment. This avoids
+              costly emergency repairs and operational downtime that leads to lost revenue.</p>
+          </div>
+        </div>
+      </section>
 
-    <script>
-        const energeticPalette = {
-            orangeRed: '#FF5733',
-            green: '#33FF57',
-            blue: '#3357FF',
-            pink: '#FF33A1',
-            lightGray: '#F4F4F4',
-            darkGray: '#374151',
-            text: '#E5E7EB'
-        };
+    </main>
 
-        function processLabels(labels, maxLength = 16) {
-            return labels.map(label => {
-                if (typeof label === 'string' && label.length > maxLength) {
-                    const words = label.split(' ');
-                    const lines = [];
-                    let currentLine = '';
-                    words.forEach(word => {
-                        if ((currentLine + ' ' + word).trim().length > maxLength) {
-                            lines.push(currentLine.trim());
-                            currentLine = word;
-                        } else {
-                            currentLine = (currentLine + ' ' + word).trim();
-                        }
-                    });
-                    lines.push(currentLine.trim());
-                    return lines;
-                }
-                return label;
-            });
-        }
-        
-        const commonTooltipOptions = {
-            plugins: {
-                tooltip: {
-                    callbacks: {
-                        title: function(tooltipItems) {
-                            const item = tooltipItems[0];
-                            let label = item.chart.data.labels[item.dataIndex];
-                            if (Array.isArray(label)) {
-                              return label.join(' ');
-                            }
-                            return label;
-                        }
-                    }
-                }
+    <footer class="text-center mt-16 border-t border-gray-700 pt-8">
+      <p class="text-sm text-gray-500">This infographic is a visual interpretation of the "Strategic Financial &
+        Operational Blueprint for a Premium Fine Dining Cafe in South Bombay" report. All data is illustrative and based
+        on market research and industry benchmarks cited in the report. Created with Chart.js and Tailwind CSS.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const energeticPalette = {
+      orangeRed: '#FF5733',
+      green: '#33FF57',
+      blue: '#3357FF',
+      pink: '#FF33A1',
+      lightGray: '#F4F4F4',
+      darkGray: '#374151',
+      text: '#E5E7EB'
+    };
+
+    function processLabels(labels, maxLength = 16) {
+      return labels.map(label => {
+        if (typeof label === 'string' && label.length > maxLength) {
+          const words = label.split(' ');
+          const lines = [];
+          let currentLine = '';
+          words.forEach(word => {
+            if ((currentLine + ' ' + word).trim().length > maxLength) {
+              lines.push(currentLine.trim());
+              currentLine = word;
+            } else {
+              currentLine = (currentLine + ' ' + word).trim();
             }
-        };
+          });
+          lines.push(currentLine.trim());
+          return lines;
+        }
+        return label;
+      });
+    }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const chartFontColor = energeticPalette.text;
+    const commonTooltipOptions = {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            title: function (tooltipItems) {
+              const item = tooltipItems[0];
+              let label = item.chart.data.labels[item.dataIndex];
+              if (Array.isArray(label)) {
+                return label.join(' ');
+              }
+              return label;
+            }
+          }
+        }
+      }
+    };
 
-            new Chart(document.getElementById('costBreakdownChart'), {
-                type: 'doughnut',
-                data: {
-                    labels: processLabels(['COGS (Food & Bev)', 'Labor Costs', 'Rent & Occupancy', 'Utilities', 'Marketing & Other', 'Delivery Costs']),
-                    datasets: [{
-                        data: [38.1, 30.8, 23.7, 5.4, 6.7, 7.3],
-                        backgroundColor: [energeticPalette.orangeRed, energeticPalette.blue, energeticPalette.pink, '#FBBF24', '#A78BFA', energeticPalette.green],
-                        borderColor: '#1F2937',
-                        borderWidth: 4,
-                        hoverOffset: 4
-                    }]
-                },
-                options: {
-                    ...commonTooltipOptions,
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        ...commonTooltipOptions.plugins,
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                color: chartFontColor,
-                                font: { size: 10 }
-                            }
-                        }
-                    }
-                }
-            });
+    document.addEventListener('DOMContentLoaded', () => {
+      const chartFontColor = energeticPalette.text;
 
-            new Chart(document.getElementById('rentComparisonChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['Colaba', 'Lower Parel', 'Bandra', 'Fort', 'Mumbai Avg.'],
-                    datasets: [{
-                        label: 'Rent per sq. ft. (₹)',
-                        data: [700, 500, 650, 450, 150],
-                        backgroundColor: [energeticPalette.orangeRed, energeticPalette.blue, energeticPalette.pink, energeticPalette.green, energeticPalette.darkGray],
-                    }]
-                },
-                options: {
-                    ...commonTooltipOptions,
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    indexAxis: 'y',
-                    scales: {
-                        x: {
-                            ticks: { color: chartFontColor },
-                            grid: { color: '#374151' }
-                        },
-                        y: {
-                            ticks: { color: chartFontColor },
-                            grid: { display: false }
-                        }
-                    },
-                    plugins: {
-                        ...commonTooltipOptions.plugins,
-                        legend: { display: false }
-                    }
-                }
-            });
+      new Chart(document.getElementById('costBreakdownChart'), {
+        type: 'doughnut',
+        data: {
+          labels: processLabels(['COGS (Food & Bev)', 'Labor Costs', 'Rent & Occupancy', 'Utilities', 'Marketing & Other', 'Delivery Costs']),
+          datasets: [{
+            data: [38.1, 30.8, 23.7, 5.4, 6.7, 7.3],
+            backgroundColor: [energeticPalette.orangeRed, energeticPalette.blue, energeticPalette.pink, '#FBBF24', '#A78BFA', energeticPalette.green],
+            borderColor: '#1F2937',
+            borderWidth: 4,
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          ...commonTooltipOptions,
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            ...commonTooltipOptions.plugins,
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: chartFontColor,
+                font: { size: 10 }
+              }
+            }
+          }
+        }
+      });
 
-            new Chart(document.getElementById('primeCostChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['Budgeted Goal', 'Illustrative Actual'],
-                    datasets: [
-                        {
-                            label: 'Food & Beverage Cost',
-                            data: [35.0, 38.1],
-                            backgroundColor: energeticPalette.orangeRed,
-                        },
-                        {
-                            label: 'Labor Cost',
-                            data: [28.0, 30.8],
-                            backgroundColor: energeticPalette.blue,
-                        },
-                        {
-                            label: 'All Other Costs',
-                            data: [37.0, 31.1],
-                            backgroundColor: energeticPalette.darkGray,
-                        }
-                    ]
-                },
-                options: {
-                    ...commonTooltipOptions,
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        x: { 
-                            stacked: true,
-                            ticks: { color: chartFontColor },
-                            grid: { display: false }
-                        },
-                        y: {
-                            stacked: true,
-                            ticks: { 
-                                color: chartFontColor,
-                                callback: function(value) { return value + '%' }
-                            },
-                             grid: { color: '#374151' }
-                        }
-                    },
-                    plugins: {
-                         ...commonTooltipOptions.plugins,
-                         legend: {
-                            position: 'bottom',
-                            labels: {
-                                color: chartFontColor,
-                                font: { size: 10 }
-                            }
-                        }
-                    }
-                }
-            });
+      new Chart(document.getElementById('rentComparisonChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Colaba', 'Lower Parel', 'Bandra', 'Fort', 'Mumbai Avg.'],
+          datasets: [{
+            label: 'Rent per sq. ft. (₹)',
+            data: [700, 500, 650, 450, 150],
+            backgroundColor: [energeticPalette.orangeRed, energeticPalette.blue, energeticPalette.pink, energeticPalette.green, energeticPalette.darkGray],
+          }]
+        },
+        options: {
+          ...commonTooltipOptions,
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          scales: {
+            x: {
+              ticks: { color: chartFontColor },
+              grid: { color: '#374151' }
+            },
+            y: {
+              ticks: { color: chartFontColor },
+              grid: { display: false }
+            }
+          },
+          plugins: {
+            ...commonTooltipOptions.plugins,
+            legend: { display: false }
+          }
+        }
+      });
 
-            new Chart(document.getElementById('deliveryCommissionChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['Restaurant Payout', 'Platform Fees (Avg. 25%)'],
-                    datasets: [{
-                        label: 'Amount (₹)',
-                        data: [750, 250],
-                        backgroundColor: [energeticPalette.green, energeticPalette.orangeRed],
-                        barThickness: 50
-                    }]
-                },
-                options: {
-                    ...commonTooltipOptions,
-                    responsive: true,
-                    maintainAspectRatio: false,
-                     indexAxis: 'y',
-                    scales: {
-                        x: {
-                             ticks: { color: chartFontColor, callback: function(value) { return '₹' + value } },
-                             grid: { color: '#374151' }
-                        },
-                        y: {
-                             ticks: { color: chartFontColor, font: {size: 12} },
-                             grid: { display: false }
-                        }
-                    },
-                    plugins: {
-                         ...commonTooltipOptions.plugins,
-                         legend: { display: false }
-                    }
-                }
-            });
+      new Chart(document.getElementById('primeCostChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Budgeted Goal', 'Illustrative Actual'],
+          datasets: [
+            {
+              label: 'Food & Beverage Cost',
+              data: [35.0, 38.1],
+              backgroundColor: energeticPalette.orangeRed,
+            },
+            {
+              label: 'Labor Cost',
+              data: [28.0, 30.8],
+              backgroundColor: energeticPalette.blue,
+            },
+            {
+              label: 'All Other Costs',
+              data: [37.0, 31.1],
+              backgroundColor: energeticPalette.darkGray,
+            }
+          ]
+        },
+        options: {
+          ...commonTooltipOptions,
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { color: chartFontColor },
+              grid: { display: false }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                color: chartFontColor,
+                callback: function (value) { return value + '%' }
+              },
+              grid: { color: '#374151' }
+            }
+          },
+          plugins: {
+            ...commonTooltipOptions.plugins,
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: chartFontColor,
+                font: { size: 10 }
+              }
+            }
+          }
+        }
+      });
 
-        });
-    </script>
+      new Chart(document.getElementById('deliveryCommissionChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Restaurant Payout', 'Platform Fees (Avg. 25%)'],
+          datasets: [{
+            label: 'Amount (₹)',
+            data: [750, 250],
+            backgroundColor: [energeticPalette.green, energeticPalette.orangeRed],
+            barThickness: 50
+          }]
+        },
+        options: {
+          ...commonTooltipOptions,
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          scales: {
+            x: {
+              ticks: { color: chartFontColor, callback: function (value) { return '₹' + value } },
+              grid: { color: '#374151' }
+            },
+            y: {
+              ticks: { color: chartFontColor, font: { size: 12 } },
+              grid: { display: false }
+            }
+          },
+          plugins: {
+            ...commonTooltipOptions.plugins,
+            legend: { display: false }
+          }
+        }
+      });
+
+    });
+  </script>
 </body>
+
 </html>
